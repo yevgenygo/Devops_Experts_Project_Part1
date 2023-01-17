@@ -3,8 +3,9 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
+
 # when testing directly from the script replace none with th real user_id you want to test
-user_id = 500
+# user_id = 500
 
 
 def frontend_test(user_id):
@@ -16,9 +17,9 @@ def frontend_test(user_id):
     driver.quit()
     return (user_name)
 
-
-try:
-    user_name = frontend_test(str(user_id))
-    print(user_name)
-except:
-    print("Getting error while trying to retrieve user with ID " + str(user_id))
+## when testing directly from the script uncoment the code below
+# try:
+#    user_name = frontend_test(str(user_id))
+#    print(user_name)
+# except:
+#    print("Getting error while trying to retrieve user with ID " + str(user_id))
