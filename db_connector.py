@@ -1,4 +1,5 @@
-# This module interacts with the predefined DB , connect to DB and run SQL queries
+# This module is a backend part of the project
+# It includes functions that interacts with the predefined DB ( connect to DB and run SQL queries )
 
 import pymysql
 
